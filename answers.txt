@@ -1,0 +1,11 @@
+Question: 3. Type `ls` to view the contents of your lab directory. Now type the command `ls > newfile.txt`. Use the `ls` command again to view the contents of the directory. What has changed? What do you think the `>` in the previous statement did when combined with the `ls` command?
+
+Answer: When we used the > flag, the outputs of the ls command were sent to the file we named newfile.txt instead of the terminal. When we use the ls command again without the flag, we see the outputs in the terminal window. 
+
+Question: 5. Run the command `git status`. What does it say about `newfile.txt`?
+
+Answer: When we used the command git add newfile.txt we staged our local changes to be sent to the git repository. Using the command git status shows us what changes we have staged, what files in our directory aren't being staged to git, and how our git branch differs from where we cloned the repository from. For newfile.txt, the git status command is showing us that we staged this file to be added to the repository.
+
+Question: 6. Open the file `newfile.txt` in a editor. Add the line "This is my file listing" to the top of the file and save it. Now run the command `git diff`. What does this command tell you about your files and their contents? You will need to type 'q' to exit the diff viewer.
+
+Answer: The diff command shows us the difference in our locally current version of files in our directory versus the version of the files we have staged for git commits. In this case, the git diff is showing us that we're added the line 'This is my file listing' to the top of the file newfile.txt
